@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.63ca719b.css",
+    "main.js": "/static/js/main.3131b34e.js",
+    "static/js/787.43d88a3b.chunk.js": "/static/js/787.43d88a3b.chunk.js",
+    "static/media/kc.png": "/static/media/kc.b9220f10d4451a2a3088.png",
+    "static/media/imsme.png": "/static/media/imsme.e1c816ca4c4433634470.png",
+    "static/media/itscope-recruitment.png": "/static/media/itscope-recruitment.c83c0af7f547bcdb294c.png",
+    "static/media/leasehouse.png": "/static/media/leasehouse.ab1a761771923bfd68a7.png",
+    "static/media/campus foodie.png": "/static/media/campus foodie.674f56b8f6747682bc5b.png",
+    "static/media/office-rm-bg.png": "/static/media/office-rm-bg.ffd8cdc1f771c0ba5fd9.png",
+    "static/media/React Native Apps.png": "/static/media/React Native Apps.ab413efce9d097e1b406.png",
+    "static/media/hackflashc.png": "/static/media/hackflashc.aa360d4cc1d880918f85.png",
+    "static/media/hyde.png": "/static/media/hyde.368bf4746cf403f4134f.png",
+    "static/media/medium.png": "/static/media/medium.953b496cda703c3fa3bc.png",
+    "static/media/payment subscription.png": "/static/media/payment subscription.45016c8e21bc1fad3db3.png",
+    "static/media/openchat.png": "/static/media/openchat.c240852539b0cd8a64ac.png",
+    "index.html": "/index.html",
+    "main.63ca719b.css.map": "/static/css/main.63ca719b.css.map",
+    "main.3131b34e.js.map": "/static/js/main.3131b34e.js.map",
+    "787.43d88a3b.chunk.js.map": "/static/js/787.43d88a3b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63ca719b.css",
+    "static/js/main.3131b34e.js"
+  ]
+}
