@@ -1,0 +1,19 @@
+.hero {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.hero-content {
+    width: 50%;
+    margin: 190px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-content {
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        right: 0px;
+    }
+}

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url("./assets/css/header.css");
+@import url("./assets/css/hero.css");
+@import url("./assets/css/contact.css");
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  color: black;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card * {
+  z-index: 1;
+}
+
+.hero-content .card::after {
+  background-color: white;
+}
+
+.dark .hero-content .card::after {
+  color: black;
+  background: #07182E;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 130%;
+  animation: rotBGimg 7s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  inset: 5px;
+  border-radius: 15px;
+}
+
+input,textarea {
+  border: 3px solid rgb(255, 48, 255)
+}
+
+.inner-btn::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  top: 40px;
+  height: 20%;
+  width: 0px;
+  background-image: linear-gradient(270deg, rgb(0, 183, 255), rgb(255, 48, 255));
+}
+
+.inner-btn:hover::after {
+  animation: slideBg 0.5s forwards;
+}
+
+@keyframes slideBg {
+  from {
+    width: 10%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
