@@ -5,7 +5,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const enailMessage = (email, fullName, message) => {
   return {
-    to: email,
+    to: [email, process.env.MY_EMAIL],
     from: process.env.MY_EMAIL,
     subject: "Theodore Kelechukwu Onyejiaku",
     html: `<!DOCTYPE html>
@@ -299,7 +299,7 @@ const enailMessage = (email, fullName, message) => {
 
 exports.sendEmail = (email, fullname, message) => {
   return sgMail
-    .send(enailMessage(email, fullname, message))
+    .sendMultiple(enailMessage(email, fullname, message))
     .then(() => {
       console.log("success")
       return { message: "Successful", error: null }
