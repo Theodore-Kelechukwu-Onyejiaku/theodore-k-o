@@ -2,9 +2,12 @@ import { useState } from 'react'
 import ParticlesBg from 'particles-bg'
 import officebg from "../assets/images/office-rm-bg.png"
 import { backend } from '../utils/urls'
+import { toast } from "react-toastify"
 
 export default function Contact() {
+    const [sending, setSending] = useState(false)
     const [contactDetails, setContactDetails] = useState({ email: "", fullName: "", message: "" });
+
 
     const handleFormInput = (e) => {
         setContactDetails((prev) => ({ ...prev, [e.target.name]: e.target.value }))
@@ -12,15 +15,19 @@ export default function Contact() {
 
     const handleFormSubmit = async (e) => {
         e.preventDefault()
-        let response = await fetch(`${backend}/email`, {
-            method: "POST",
-            body: JSON.stringify(contactDetails),
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-        response = await response.json()
-        console.log(response)
+        try {
+            let response = await fetch(`${backend}/email`, {
+                method: "POST",
+                body: JSON.stringify(contactDetails),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+            response = await response.json()
+            toast(response, { type: "success" })
+        } catch (error) {
+            toast("Something went wrong", { type: "error" })
+        }
     }
     return (
         <div className='dark:bg-black dark:bg-opacity-100 py-10 md:p-10 px-5' id='contact'>
@@ -46,7 +53,9 @@ export default function Contact() {
                             <textarea onChange={handleFormInput} name="message" className='bg-transparent h-20 dark:text-white w-full p-4 rounded-lg'></textarea>
                         </div>
                         <div className='my-5'>
-                            <button type='submit' className='rounded  p-2 border text-[#ff2fff] font-bold shadow block w-20 text-center'>Submit</button>
+                            <button disabled={sending} type='submit' className='rounded  p-4 border text-white bg-[#ff2fff] dark:border-none font-bold shadow w-60 text-center'>
+                                {sending ? "Sending..." : "Sumbit"}
+                            </button>
                         </div>
                     </form>
 

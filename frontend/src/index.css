@@ -8,14 +8,23 @@
 @import url("./assets/css/header.css");
 @import url("./assets/css/hero.css");
 @import url("./assets/css/contact.css");
+@import url("./assets/css/scrolldown.css");
+
+.Toastify__toast-theme--dark {
+  color: white !important;
+}
+
+.Toastify__toast-theme--light {
+  color: black !important
+}
 
 body {
   overflow-x: hidden;
 }
 
-* {
+/* * {
   color: black;
-}
+} */
 
 .card {
   position: relative;
@@ -66,7 +75,8 @@ body {
   border-radius: 15px;
 }
 
-input,textarea {
+input,
+textarea {
   border: 3px solid rgb(255, 48, 255)
 }
 

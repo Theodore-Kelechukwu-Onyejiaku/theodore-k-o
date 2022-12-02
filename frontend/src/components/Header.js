@@ -1,11 +1,8 @@
 import { useState, useEffect, useRef, useContext } from "react"
 import { RiNotification3Fill, RiSunLine, RiMoonLine } from "react-icons/ri"
 import MyAppContext from "../utils/MyAppContext"
-import ScrollReveal from 'scrollreveal'
 import { TypeAnimation } from 'react-type-animation';
 import scrollSmooth from "scroll-smooth"
-import ParticlesBg from 'particles-bg'
-
 
 export default function Header() {
     const [open, setOpen] = useState(false)
@@ -37,9 +34,6 @@ export default function Header() {
         var sticky = header.offsetTop;
 
         function myFunction() {
-            ScrollReveal({ reset: true });
-            console.log(btns)
-
             if (window.pageYOffset > sticky) {
                 header.classList.add("fixed");
             } else {
