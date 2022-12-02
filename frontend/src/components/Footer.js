@@ -7,8 +7,8 @@ export default function Footer() {
 
     return (
         <div className='relative bottom-0 dark:bg-black'>
-            <div className='mx-10 py-10 p-4 text-center border-t-2 border-gray-800'>
-                <p className='text font-thin text-gray-400'>© Theodore Kelechukwu Onyejiaku</p>
+            <div className='p-4 text-center '>
+                <p className='text font-thin text-gray-400 mx-10 border-t-2 border-gray-800 pt-10'>© Theodore Kelechukwu Onyejiaku</p>
                 <p className='text font-thin text-gray-400'>Rememeber that <strong>"life is like a blink of an eye"</strong></p>
                 <div className='flex justify-center space-x-4 my-4'>
                     <a href='https://github.com/Theodore-Kelechukwu-Onyejiaku'><BsGithub size={30} fill={`${theme === "dark" ? "white" : "black"}`} className='' /></a>
