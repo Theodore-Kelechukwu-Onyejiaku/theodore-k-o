@@ -15,9 +15,9 @@ CursorTrail({
     container: document.body,
     images: ["https://cdn.pixabay.com/photo/2016/11/19/21/31/bubble-1841301_1280.png"],
     rate: 0.5,
-    size: 40,
-    life: 1.5,
-    speed: 1.2
+    size: 5,
+    life: 0.5,
+    speed: 0.5
 });
 
 export default function Home() {

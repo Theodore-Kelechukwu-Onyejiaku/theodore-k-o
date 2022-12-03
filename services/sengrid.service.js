@@ -116,7 +116,7 @@ const enailMessage = (email, fullName, message) => {
     
       <!-- start preheader -->
       <div class="preheader" style="display: none; max-width: 0; max-height: 0; overflow: hidden; font-size: 1px; line-height: 1px; color: #fff; opacity: 0;">
-        Subscription successful and plan activated.
+       Thanks for contacting Theodore!
       </div>
       <!-- end preheader -->
     
@@ -134,7 +134,7 @@ const enailMessage = (email, fullName, message) => {
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
               <tr>
                 <td align="center" valign="top" style="padding: 36px 24px;">
-                    <img src="https://lh3.googleusercontent.com/hkPOQBjOqwtlv7x9UBhvwqij-jA_BxhBCyIGlGidBzEntPaZ_yxG0juFWRnh89TS83WeT_x4RmD_po3VJ33ZpH1Af3yUcYRRvdAzcKH1S4ZonVLUlJeFTBnDa6TDLLdOQmyc8JL8EJxVH08pnyuqGT_8m00B09y9LIoMnP10haeHv0cR866wrAIrtISF0rsvSt44p9jBijWtYv2mLEEHbxhq-vVTkKH4R3hudd3gGd_lIoL42Ps0QT1Zhi1UYx6CCTAs6DWdvQ-4odeW3K-9lcgyCsmAw6aKZFCslHxDAH6-Qtt7AigURa1O2PA6-m01QpjEqv7NctxJjb340vlMcWXc9sq1QAdOFNo0H26gVzrzbS7CDdcIO9DVVBuBjGQBjcgjZi-sBuzTgA-IkoBY1Hj4x0ga9qKS5lYMJ9pqskYxnq9qDC67lyQp3UsOLjs4XaehAifmz8mBaob2Q_oCwSif1spb2b5Il0t7wnvOJ44UNmMFA4LYJfswLhRgdRq32hqXM5pnxfzYozLhz3SIJOK0fZ92VIlzj78kBsmjNiqUI_px7SGJ1ejqmjai2R4U3llVHVO438LgiSBvQQNYu_7lez1XvXmMmJubTBBeqF7R2xuYcowbaHSy0awQAytitajVidp3BZGYNKp6XqoOZcB19n2W2uDk7k67i33ktN89HInPns1P2cc3FLps2BA7ji9kmngsaum2v40eQYz8_0Ak1MPINgKaUQDwESd_YAIjr9R4HllvQ5tvBkL5oD42boS317E2EfmljJpX374OxV8efin-7icki8EdZ7zWlGX_pn--EFnzMo0fXY3_2jouKyayQ4LqoaK5yiIlIc-cP7eClYKAC3wO1f_ganH4IZZPBYT0ymah5BP6vk_uDo07VDjp9wNraDb3SNHAEWkx6NymJw7LBTKVvqP1zjzHIZKPiDvkjYounuKS9_KzP_YpRGkU-LL4o9D_cYcZldNQzW94QLu-G0FxCycNMRN7fTdIy9jUz8Jss6IMDcGIoH6AhVQncO0E_3LT0dYuQyzZGTS3MS-M=w1390-h1642-no?authuser=0" alt="Logo" border="0" width="100%" style="display: block; width: 100%; max-width: 100%; min-width: 100%;">
+                    <img src="https://res.cloudinary.com/theodorekelz/image/upload/v1670050129/ekejjv8ejnx6reikus8c_1_itflhw.jpg" alt="Logo" border="0" width="100%" style="display: block; width: 100%; max-width: 100%; min-width: 100%;">
                   </a>
                 </td>
               </tr>

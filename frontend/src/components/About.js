@@ -8,10 +8,11 @@ export default function About() {
                             <span className='font-bold md:text-3xl p-5 text-white w-64 text-center'>About Me</span>
                         </div>
                         <p className='pt-5 md:pt-20 dark:text-white text-md md:text-xl font-thin'>
-                            As a JavaScript Developer, Theodore uses Technologies such as ReactJs, NextJs, NodeJs, and ExpressJs, and React Native, TypeScript, MongoDB, and Postgres.
-                            He also tries to contribute to the community to share his knowledge through Technical Writing.
-                            Education is particularly where his interest lies. And this is why he writes. And he hopes to build a solution that will be disruptive someday.
-                            Currently, he is writing an article on building an Online Dictionary with React Native using Merriam-Webster Dictionary API and Unsplash API. At the time of writing this, he works as a Frontend Engineer, where he uses technologies such as ReactJs, NextJs, and Redux to build and transform intuitive and high-performant front-end applications. Presently, he is currently writing for Geek Culture on Medium. And very soon, he will have writings on other publication agencies such as logRocket and the likes. And lastly, Theodore is open to Front-end Developer Roles and Technical Writing Roles.
+                            As a Software Developer, Theodore has skills in frontend development and backend development. His Technologies include ReactJs, NextJs, NodeJs, ExpressJs, React Native, TypeScript, MongoDB, and Postgres and AWS. With years of experience in building products and writing codes under his belt, be rest assured that you have one of the best talents.
+                            Being a GNOME Campus Ambassador he possesses leadership and good communication skills. And as a one-time contributor of the month on the Educative.io platform, writing and sharing his knowledge is what he loves doing.
+                            He graduated with a CGPA of 4.35/5.0 from the prestigious Federal University of Technology, where he studied Information Technology.
+                            Theodore is a jovial, high-spirited individual and very amazing to work with. He enjoys community upbuilding and is a volunteer for Give Back Nigeria Organization and Lagos Food Bank Initiative where he volunteers to foster the WHO Sustainable Development Goals.  At leisure he enjoys reading, playing guitar, singing, and quietness.
+                            Education is particularly where his interest lies. And this is why he writes. He wants to build a solution in the future that will be disruptive someday.
                         </p>
                     </div>
                 </div>

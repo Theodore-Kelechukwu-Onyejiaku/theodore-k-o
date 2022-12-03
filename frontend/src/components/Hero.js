@@ -36,7 +36,7 @@ export default function Hero() {
                                 <a href='https://medium.com/@theodoreonyejiaku'><BsMedium size={30} fill={`${theme === "dark" ? "white" : "black"}`} /></a>
                             </div>
                             <h1 className='dark:text-white text-black font-bold md:text-3xl my-3'>Theodore Kelechukwu Onyejiaku</h1>
-                            <p className='md:text-2xl font-thin dark:text-white text-black'>Theodore is a Software Engineer with experience working with TypeScript, ReactJs, ExpressJs, NodeJs, NextJs, ReactNative and Tailwind CSS </p>
+                            <p className='md:text-2xl font-thin dark:text-white text-black'>Theodore is a Software Engineer with experience working with TypeScript, ReactJs, ExpressJs, NodeJs, MongoDB, Postgres, AWS, NextJs, ReactNative and Tailwind CSS </p>
                             <TypeAnimation
                                 // Same String at the start will only be typed once, initially
                                 sequence={[
@@ -59,8 +59,8 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <div className='absolute bottom-56 md:bottom-32 flex justify-center w-full'>
-                <div className="scrolldown" onClick={() => { scrollTo("#about") }}>
+            <div className='absolute bottom-1/4 md:bottom-32 flex justify-center w-full'>
+                <div className="scrolldown bg-[#07182E]" onClick={() => { scrollTo("#about") }}>
                     <div className="chevrons">
                         <div className="chevrondown"></div>
                         <div className="chevrondown"></div>
