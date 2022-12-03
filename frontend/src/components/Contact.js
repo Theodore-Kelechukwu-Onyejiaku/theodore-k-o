@@ -41,11 +41,13 @@ export default function Contact() {
 
     const handleFormSubmit = async (e) => {
         setErrors([])
-        // setSending(true)
+        setSending(true)
         e.preventDefault()
         const hasErrors = await handleErrors();
-        console.log(hasErrors)
-        if (hasErrors) return
+        if (hasErrors) {
+            setSending(false)
+            return
+        }
         try {
             let response = await fetch(`${backend}/email`, {
                 method: "POST",
@@ -74,7 +76,6 @@ export default function Contact() {
 
                 <div className='basis-1/2'>
                     <form action='POST' onSubmit={handleFormSubmit}>
-                        {errors.length > 0 ? <ul className='li list-disc font-bold p-3 text-red-600 border-red-500'>{errors.map(error => <li className=' list-item'>{error}</li>)}</ul> : null}
 
                         <div className='flex flex-col'>
                             <label className='dark:text-white my-3 '>Email Address</label>
@@ -88,6 +89,8 @@ export default function Contact() {
                             <label className='dark:text-white my-3 '>Message</label>
                             <textarea onChange={handleFormInput} name="message" className='bg-transparent h-20 dark:text-white w-full p-4 rounded-lg'></textarea>
                         </div>
+                        {errors.length > 0 ? <ul className='li list-disc font-bold p-3 text-red-600 border-red-500'>{errors.map(error => <li className=' list-item'>{error}</li>)}</ul> : null}
+
                         <div className='my-5 text-center md:text-left'>
                             <button disabled={sending} type='submit' className='rounded disabled:cursor-not-allowed  p-4 border text-white bg-[#ff2fff] dark:border-none font-bold shadow w-full md:w-60 text-center'>
                                 {sending ? "Sending..." : "Sumbit"}
