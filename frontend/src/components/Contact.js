@@ -7,14 +7,45 @@ import { toast } from "react-toastify"
 export default function Contact() {
     const [sending, setSending] = useState(false)
     const [contactDetails, setContactDetails] = useState({ email: "", fullName: "", message: "" });
+    const [errors, setErrors] = useState([])
 
+    const validateEmail = (email) => {
+        let emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        if (email.match(emailRegex)) {
+            return true
+        } else {
+            return false
+        }
+    }
 
     const handleFormInput = (e) => {
+        setErrors([])
         setContactDetails((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
 
+    const handleErrors = () => {
+        let hasError = false
+        if (!(validateEmail(contactDetails.email))) {
+            setErrors(prev => [...prev, "email address incorrect"])
+            hasError = true
+        }
+
+        Object.keys(contactDetails).map(key => {
+            if (contactDetails[key] === "") {
+                setErrors(prev => [...prev, key.toLowerCase() + " is missing"])
+                hasError = true
+            }
+        })
+        return hasError
+    }
+
     const handleFormSubmit = async (e) => {
+        setErrors([])
+        // setSending(true)
         e.preventDefault()
+        const hasErrors = await handleErrors();
+        console.log(hasErrors)
+        if (hasErrors) return
         try {
             let response = await fetch(`${backend}/email`, {
                 method: "POST",
@@ -25,35 +56,40 @@ export default function Contact() {
             })
             response = await response.json()
             toast(response, { type: "success" })
+            setSending(false)
         } catch (error) {
             toast("Something went wrong", { type: "error" })
+            setSending(false)
         }
     }
+
+
     return (
         <div className='dark:bg-black dark:bg-opacity-100 py-10 md:p-10 px-5' id='contact'>
 
             <div className='card w-64 mx-auto md:w-fit md:mx-0 my-5'>
                 <span className='font-bold md:text-3xl w-64 text-center p-5 text-white'>Contact Me</span>
             </div>
-
             <div className='flex py-5 flex-col space-x-0 space-y-10 md:space-y-0 md:space-x-10 md:flex-row'>
 
                 <div className='basis-1/2'>
                     <form action='POST' onSubmit={handleFormSubmit}>
+                        {errors.length > 0 ? <ul className='li list-disc font-bold p-3 text-red-600 border-red-500'>{errors.map(error => <li className=' list-item'>{error}</li>)}</ul> : null}
+
                         <div className='flex flex-col'>
                             <label className='dark:text-white my-3 '>Email Address</label>
-                            <input onChange={handleFormInput} type="email" name='email' className='bg-transparent dark:text-white w-full p-4 rounded-lg' placeholder="johndoe@gmail.com" />
+                            <input onChange={handleFormInput} type="email" name='email' className='bg-transparent dark:text-white w-full p-4 rounded-lg' />
                         </div>
                         <div className='flex flex-col'>
                             <label className='dark:text-white my-3 '>Full Name</label>
-                            <input onChange={handleFormInput} type="text" name='fullName' className='bg-transparent dark:text-white w-full p-4 rounded-lg' placeholder="john doe" />
+                            <input onChange={handleFormInput} type="text" name='fullName' className='bg-transparent dark:text-white w-full p-4 rounded-lg' />
                         </div>
                         <div className='flex flex-col'>
                             <label className='dark:text-white my-3 '>Message</label>
                             <textarea onChange={handleFormInput} name="message" className='bg-transparent h-20 dark:text-white w-full p-4 rounded-lg'></textarea>
                         </div>
-                        <div className='my-5'>
-                            <button disabled={sending} type='submit' className='rounded  p-4 border text-white bg-[#ff2fff] dark:border-none font-bold shadow w-60 text-center'>
+                        <div className='my-5 text-center md:text-left'>
+                            <button disabled={sending} type='submit' className='rounded disabled:cursor-not-allowed  p-4 border text-white bg-[#ff2fff] dark:border-none font-bold shadow w-full md:w-60 text-center'>
                                 {sending ? "Sending..." : "Sumbit"}
                             </button>
                         </div>

@@ -30,14 +30,23 @@ export default function Header() {
         window.onscroll = function () { myFunction() };
 
         var header = document.getElementById("sticky");
-        var btns = document.getElementsByClassName("btn")
+        let scrollToTop = document.getElementById("scrollToTop");
         var sticky = header.offsetTop;
+
+        scrollToTop.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        })
 
         function myFunction() {
             if (window.pageYOffset > sticky) {
                 header.classList.add("fixed");
+                scrollToTop.style.display = "block"
             } else {
                 header.classList.remove("fixed");
+                scrollToTop.style.display = "none"
             }
         }
         document.addEventListener("click", (event) => {
@@ -115,12 +124,11 @@ export default function Header() {
                                 <span className="overlay-content-child relative text-3xl text-white p-2 rounded w-60 dark:text-white cursor-pointer inner-btn" onClick={() => { scrollTo("#articles"); handleMenu() }} to="/">Articles</span>
                                 <span className="overlay-content-child relative text-3xl text-white p-2 rounded w-60 dark:text-white cursor-pointer inner-btn" onClick={() => { scrollTo("#contact"); handleMenu() }} to="/">Contact Me</span>
                             </div>
-                            
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <ParticlesBg type="thick" bg={true} /> */}
+            <button id="scrollToTop" className="fixed bottom-5 hidden  right-3 dark:text-white text-5xl z-50 cursor-pointer p-2 border-black dark:border-white animate-pulse border-4 text-center rounded-full">^</button>
         </div>
     )
 }
