@@ -21,7 +21,7 @@ export default function About() {
                             <span className="dark:text-white text-2xl font-bold">Educative.io</span>
                         </div>
                         <p className="dark:text-white my-3">Educative Answers is a free web encyclopedia written by devs for devs. Find the answers you need with our short, verified articles that feature executable code, or join the community and become a contributor.</p>
-                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-fit text-center">View my articles</a>
+                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center">View My Articles</a>
                     </div>
 
                     <div className="">
@@ -30,7 +30,7 @@ export default function About() {
                             <span className="dark:text-white text-2xl font-bold">Medium</span>
                         </div>
                         <p className="dark:text-white my-3">Medium is an open platform where readers find dynamic thinking, and where expert and undiscovered voices can share their writing on any topic.</p>
-                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-fit text-center" href="">View my articles</a>
+                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="">View My Articles</a>
                     </div>
 
                     <div className="">
@@ -39,7 +39,7 @@ export default function About() {
                             <span className="dark:text-white text-2xl font-bold">Dev.to</span>
                         </div>
                         <p className="dark:text-white my-3">DEV Community ‍ ‍ is a community of 965,460 amazing developers. We're a place where coders share, stay up-to-date and grow their careers.</p>
-                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-fit text-center" href="https://dev.to/javascriptar">View my articles</a>
+                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="https://dev.to/javascriptar">View My Articles</a>
                     </div>
 
                     <div className="">
@@ -48,7 +48,7 @@ export default function About() {
                             <span className="dark:text-white text-2xl font-bold">Strapi</span>
                         </div>
                         <p className="dark:text-white my-3">This program is for Strapi enthusiasts, developers, and content managers who want to contribute to our tutorials and deep dives.</p>
-                        <span className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-fit text-center" href="">Coming Soon...</span>
+                        <span className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="">Coming Soon...</span>
                     </div>
 
                     <div className="">
@@ -57,7 +57,7 @@ export default function About() {
                             <span className="dark:text-white text-2xl font-bold">Hashnode</span>
                         </div>
                         <p className="dark:text-white my-3">Start a blog for free instantly and share your ideas with people in tech, developers, and engineers. Hashnode is a free blogging platform.</p>
-                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-fit text-center" href="https://hashnode.com/@JavaScriptar">View my articles</a>
+                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="https://hashnode.com/@JavaScriptar">View My Articles</a>
                     </div>
 
                 </div>

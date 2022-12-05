@@ -9,7 +9,7 @@ import ParticlesBg from 'particles-bg'
 
 export default function Skills() {
     return (
-        <div className='dark:bg-black dark:bg-opacity-100 py-10 md:p-10' id='skills'>
+        <div data-aos="fade-left" data-aos-duration="1500" className='dark:bg-black dark:bg-opacity-100 py-10 md:p-10' id='skills'>
             <div className='card w-64 mx-auto md:w-fit md:mx-0 my-5'>
                 <span className='font-bold md:text-3xl p-5 text-white w-64 text-center'>Skills</span>
             </div>
@@ -98,12 +98,12 @@ export default function Skills() {
                     </div>
 
                 </div>
-                <ParticlesBg type="color" bg={{
+                {/* <ParticlesBg type="color" bg={{
                     position: "absolute",
                     zIndex: 0,
                     top: 0,
                     width: "100%",
-                }} />
+                }} /> */}
             </div>
 
         </div>

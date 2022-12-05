@@ -1,16 +1,16 @@
 import projects from '../utils/projects'
 
 export default function Projects() {
-    const animations = ['fade-up', 'fade-up-right', 'fade-up-left', 'zoom-in-down', 'zoom-in', 'flip-down', 'slide-right', 'zoom-out-right'];
     return (
-        <div data-aos="fade-up" data-aos-duration="1500" className='overflow-hidden dark:bg-black dark:bg-opacity-100 py-10 md:p-10 px-5 w-full' id='projects'>
+        <div  className='overflow-hidden dark:bg-black dark:bg-opacity-100 py-10 md:p-10 px-5 w-full' id='projects'>
             <div className='card w-64 mx-auto md:w-fit md:mx-0 my-5'>
                 <span className='font-bold md:text-3xl p-5 text-white w-64 text-center'>Projects</span>
             </div>
             <div className='flex flex-col items-center py-10'>
-                {projects.map(pro =>
-                    <div key={pro.id} className='w-full md:w-1/2 m-auto'>
-                        <p className='dark:text-white py-3'>{pro.title}</p> 
+                {projects.map((pro, index) =>
+                    <div data-aos={parseInt(index) % 2 === 0 ? "fade-right" : "fade-left"} data-aos-duration="3000" key={pro.id} className='w-full md:w-1/2 m-auto'>
+                        <p className='dark:text-white py-3 text-2xl font-bold'>{pro.title}</p>
+                        {parseInt(index) % 2 === 0 ? "fade-right" : "fade-left"}
                         <img className='border' src={pro.image} />
                         <p className='py-3 '>
                             {pro?.stacks.map(stack =>
@@ -18,10 +18,10 @@ export default function Projects() {
                             )}
                         </p>
                         <p className='dark:text-white dark:bg-black py-5'>
-                            {pro.description.substring(0, 200)}...
+                            {pro.description}
                         </p>
                         <p className='py-5'>
-                            <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow w-30 text-center" href={pro.url}>Visit</a>
+                            <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow px-4 text-center" href={pro.url}>View Project</a>
                         </p>
                     </div>
                 )}

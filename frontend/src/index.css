@@ -72,7 +72,7 @@ body {
   position: absolute;
   background: #07182E;
   inset: 5px;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
 
 input,
