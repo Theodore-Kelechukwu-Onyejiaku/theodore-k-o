@@ -10,7 +10,6 @@ export default function Projects() {
                 {projects.map((pro, index) =>
                     <div data-aos={parseInt(index) % 2 === 0 ? "fade-right" : "fade-left"} data-aos-duration="3000" key={pro.id} className='w-full md:w-1/2 m-auto'>
                         <p className='dark:text-white py-3 text-2xl font-bold'>{pro.title}</p>
-                        {parseInt(index) % 2 === 0 ? "fade-right" : "fade-left"}
                         <img className='border' src={pro.image} />
                         <p className='py-3 '>
                             {pro?.stacks.map(stack =>
