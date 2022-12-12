@@ -69,7 +69,7 @@ export default function Contact() {
     return (
         <div className='dark:bg-black dark:bg-opacity-100 py-10 md:p-10 px-5' id='contact'>
 
-            <div className='card w-64 mx-auto md:w-fit md:mx-0 my-5'>
+            <div className='card-no-bg w-64 mx-auto md:w-fit md:mx-0 my-5'>
                 <span className='font-bold md:text-3xl w-64 text-center p-5 text-white'>Contact Me</span>
             </div>
             <div className='flex py-5 flex-col space-x-0 space-y-10 md:space-y-0 md:space-x-10 md:flex-row'>

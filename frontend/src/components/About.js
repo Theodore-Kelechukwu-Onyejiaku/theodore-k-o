@@ -4,7 +4,7 @@ export default function About() {
             <div className="md:pt-20 pt-10">
                 <div className='dark:bg-black dark:bg-opacity-100 px-5 md:p-10' data-aos="fade-up" data-aos-duration="1500">
                     <div>
-                        <div className='card w-64 mx-auto md:w-fit md:mx-0 text-center'>
+                        <div className='card-no-bg w-64 mx-auto md:w-fit md:mx-0 text-center'>
                             <span className='font-bold md:text-3xl p-5 text-white w-64 text-center'>About Me</span>
                         </div>
                         <p className='pt-5 md:pt-20 dark:text-white text-md md:text-xl font-thin'>
