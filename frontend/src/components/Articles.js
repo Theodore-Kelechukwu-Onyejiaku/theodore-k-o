@@ -9,7 +9,7 @@ export default function About() {
         <div className='dark:bg-black dark:bg-opacity-100 px-5 py-10 md:p-10' data-aos="fade-up" data-aos-duration="1500" id='articles'>
             <div className=''>
                 <div className='card-no-bg w-64 mx-auto md:w-fit md:mx-0 my-5'>
-                    <span className='font-bold md:text-3xl p-5 text-white w-64 text-center'>Articles</span>
+                    <span className='font-bold md:text-3xl p-5 dark:text-white w-64 text-center'>Articles</span>
                 </div>
                 <p className='pt-5 md:pt-20 dark:text-white text-md md:text-xl'>
                     In order to give back to community, share my knowledge and experience, I have written some articles that will help other developers

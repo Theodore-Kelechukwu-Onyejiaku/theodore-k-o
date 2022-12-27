@@ -5,7 +5,7 @@ export default function About() {
                 <div className='dark:bg-black dark:bg-opacity-100 px-5 md:p-10' data-aos="fade-up" data-aos-duration="1500">
                     <div>
                         <div className='card-no-bg w-64 mx-auto md:w-fit md:mx-0 text-center'>
-                            <span className='font-bold md:text-3xl p-5 text-white w-64 text-center'>About Me</span>
+                            <span className='font-bold md:text-3xl p-5 dark:text-white w-64 text-center'>About Me</span>
                         </div>
                         <p className='pt-5 md:pt-20 dark:text-white text-md md:text-xl font-thin'>
                             As a Software Developer, Theodore has skills in frontend development and backend development. His Technologies include ReactJs, NextJs, NodeJs, ExpressJs, React Native, TypeScript, MongoDB, and Postgres and AWS. With years of experience in building products and writing codes under his belt, be rest assured that you have one of the best talents.
