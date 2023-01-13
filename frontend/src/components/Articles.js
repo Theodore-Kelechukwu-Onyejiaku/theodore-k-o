@@ -21,7 +21,7 @@ export default function About() {
                             <span className="dark:text-white text-2xl font-bold">Educative.io</span>
                         </div>
                         <p className="dark:text-white my-3">Educative Answers is a free web encyclopedia written by devs for devs. Find the answers you need with our short, verified articles that feature executable code, or join the community and become a contributor.</p>
-                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center">View My Articles</a>
+                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="https://www.educative.io/profile/view/5894995463110656">View My Articles</a>
                     </div>
 
                     <div className="">
@@ -30,7 +30,7 @@ export default function About() {
                             <span className="dark:text-white text-2xl font-bold">Medium</span>
                         </div>
                         <p className="dark:text-white my-3">Medium is an open platform where readers find dynamic thinking, and where expert and undiscovered voices can share their writing on any topic.</p>
-                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="">View My Articles</a>
+                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="https://medium.com/@theodoreonyejiaku">View My Articles</a>
                     </div>
 
                     <div className="">
@@ -48,7 +48,7 @@ export default function About() {
                             <span className="dark:text-white text-2xl font-bold">Strapi</span>
                         </div>
                         <p className="dark:text-white my-3">This program is for Strapi enthusiasts, developers, and content managers who want to contribute to our tutorials and deep dives.</p>
-                        <span className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="">Coming Soon...</span>
+                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="https://strapi.io/user/theodore-kelechukwu-onyejiaku">View My Articles</a>
                     </div>
 
                     <div className="">
