@@ -7,7 +7,8 @@ import paymentSubscription from "../assets/images/payment subscription.png"
 import onlineDictionary from "../assets/images/React Native Apps.png"
 import hackflashc from "../assets/images/hackflashc.png"
 import campusFoodie from "../assets/images/campus foodie.png"
-
+import twitchers from "../assets/images/twitchers.png"
+import project_mgt from "../assets/images/project-mgt.png"
 
 const projects = [
     {
@@ -55,6 +56,16 @@ const projects = [
         id: 9, title: "Campus Foodie", "image": campusFoodie, stacks: ["reactjs", "redux", "materialize css", "nodejs", "mongoDB"],
         description: "A food ordering application for students to make some money in line with WHO Sustainable Developmental Goals to elimate poverty and hunger. One of its features is to enable real time tracking of food delivery. Still in progress",
         url: "https://campus-foodie.netlify.app/"
+    },
+    {
+        id: 10, title: "Twitchers", "image": twitchers, stacks: ['jquery', 'tailwind css', "leaflet map", 'html', "css"],
+        description: "Twitcher is for people who love birds and take pictures of birds.",
+        url: "https://twitchers.netlify.app/"
+    },
+    {
+        id: 11, title: "Project Management App", "image": project_mgt, stacks: ['GraphQL', "ReactJs", "Tailwind CSS", "NodeJS", "MongoDB"],
+        description: "Project Management app built using GraphQL, NodeJs, MongoDB and ReactJs",
+        url: "https://project-mgt.onrender.com/"
     }
 ]
 

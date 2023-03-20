@@ -8,7 +8,7 @@ export default function Projects() {
             </div>
             <div className='flex flex-col items-center py-10'>
                 {projects.map((pro, index) =>
-                    <div data-aos={parseInt(index) % 2 === 0 ? "fade-right" : "fade-left"} data-aos-duration="2000" key={pro.id} className='w-full md:w-1/2 m-auto'>
+                    <div  key={pro.id} className='w-full md:w-1/2 m-auto'>
                         <p className='dark:text-white py-3 text-2xl font-bold'>{pro.title}</p>
                         <img className='border' src={pro.image} />
                         <p className='py-3 '>

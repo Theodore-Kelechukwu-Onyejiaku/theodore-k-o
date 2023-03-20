@@ -20,7 +20,7 @@ export default function Contact() {
 
     const handleFormInput = (e) => {
         setErrors([])
-        setContactDetails((prev) => ({ ...prev, [e.target.name]: e.target.value }))
+        setContactDetails((prev) => ({ ...prev, [e.target.name]: e.target.value.trim() }))
     }
 
     const handleErrors = () => {
@@ -31,7 +31,7 @@ export default function Contact() {
         }
 
         Object.keys(contactDetails).map(key => {
-            if (contactDetails[key] === "") {
+            if (contactDetails[key].trim() === "") {
                 setErrors(prev => [...prev, key.toLowerCase() + " is missing"])
                 hasError = true
             }
