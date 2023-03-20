@@ -1,11 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.e7344e38.css",
-    "main.js": "/static/js/main.76a240e5.js",
+    "main.js": "/static/js/main.0031b2e1.js",
     "static/js/787.43d88a3b.chunk.js": "/static/js/787.43d88a3b.chunk.js",
+    "static/media/twitchers.png": "/static/media/twitchers.5b0fbc4f884d08ec7ea8.png",
     "static/media/kc.png": "/static/media/kc.b9220f10d4451a2a3088.png",
     "static/media/imsme.png": "/static/media/imsme.e1c816ca4c4433634470.png",
     "static/media/itscope-recruitment.png": "/static/media/itscope-recruitment.c83c0af7f547bcdb294c.png",
+    "static/media/project-mgt.png": "/static/media/project-mgt.08996e6ef4a15a9ae83c.png",
     "static/media/leasehouse.png": "/static/media/leasehouse.ab1a761771923bfd68a7.png",
     "static/media/campus foodie.png": "/static/media/campus foodie.674f56b8f6747682bc5b.png",
     "static/media/office-rm-bg.png": "/static/media/office-rm-bg.ffd8cdc1f771c0ba5fd9.png",
@@ -15,13 +17,14 @@
     "static/media/medium.png": "/static/media/medium.953b496cda703c3fa3bc.png",
     "static/media/payment subscription.png": "/static/media/payment subscription.45016c8e21bc1fad3db3.png",
     "static/media/openchat.png": "/static/media/openchat.c240852539b0cd8a64ac.png",
+    "static/media/openreplay.svg": "/static/media/openreplay.e294e02112c687fbfd3fa65c9d967f80.svg",
     "index.html": "/index.html",
     "main.e7344e38.css.map": "/static/css/main.e7344e38.css.map",
-    "main.76a240e5.js.map": "/static/js/main.76a240e5.js.map",
+    "main.0031b2e1.js.map": "/static/js/main.0031b2e1.js.map",
     "787.43d88a3b.chunk.js.map": "/static/js/787.43d88a3b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e7344e38.css",
-    "static/js/main.76a240e5.js"
+    "static/js/main.0031b2e1.js"
   ]
 }
