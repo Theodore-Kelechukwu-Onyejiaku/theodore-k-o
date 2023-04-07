@@ -1,6 +1,5 @@
 import { useContext } from 'react'
 import { BsTwitter, BsGithub, BsLinkedin, BsStackOverflow, BsMedium } from "react-icons/bs"
-import { GiArrowDunk } from "react-icons/gi"
 import MyAppContext from '../utils/MyAppContext'
 import { TypeAnimation } from 'react-type-animation';
 import kc from "../assets/images/kc.png"
@@ -36,7 +35,7 @@ export default function Hero() {
                                 <a href='https://medium.com/@theodoreonyejiaku'><BsMedium size={30} fill={`${theme === "dark" ? "white" : "black"}`} /></a>
                             </div>
                             <h1 className='dark:text-white text-black font-bold text-2xl md:text-3xl my-3'>Theodore Kelechukwu Onyejiaku</h1>
-                            <p className='md:text-2xl font-thin dark:text-white text-black'>Theodore is a Software Engineer with experience working with TypeScript, ReactJs, ExpressJs, NodeJs, MongoDB, Postgres, AWS, NextJs, ReactNative and Tailwind CSS </p>
+                            <p className='md:text-2xl font-thin dark:text-white text-black'>Theodore is a Software Engineer and Technical Writer with experience working with TypeScript, ReactJs, NextJs, React Native, TailwindCSS, ExpressJs, NodeJs, NestJs, MongoDB, Postgres, AWS and more... </p>
                             <TypeAnimation
                                 // Same String at the start will only be typed once, initially
                                 sequence={[

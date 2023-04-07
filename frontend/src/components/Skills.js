@@ -17,7 +17,7 @@ export default function Skills() {
                 <div className='relative overflow-hidden group flex flex-col justify-center items-center  shadow-lg top-0 hover:-top-10 transition-all ease-in duration-500'>
                     <div className='relative z-40'>
                         <p className='dark:text-white'>TypeScript</p>
-                        <img className='' src={typeScript} />
+                        <img alt='skills' className='' src={typeScript} />
                     </div>
                     <div className='absolute group-hover:top-0 transition-all duration-100 top-80 h-full'>
                         <ParticlesBg type="tadpole" bg={{
@@ -32,7 +32,7 @@ export default function Skills() {
                 <div className='relative overflow-hidden group flex flex-col justify-center items-center  shadow-lg top-0 hover:-top-10 transition-all ease-in duration-500'>
                     <div className='relative z-40'>
                         <p className='dark:text-white'>NextJs</p>
-                        <img className='brightness-200 bg-white' src={nextIcon} />
+                        <img alt='skills' className='brightness-200 bg-white' src={nextIcon} />
                     </div>
                     <div className='absolute group-hover:top-0 transition-all duration-100 top-80 h-full'>
                         <ParticlesBg type="tadpole" bg={{
@@ -46,7 +46,7 @@ export default function Skills() {
                 <div className='relative overflow-hidden group flex flex-col justify-center items-center  shadow-lg top-0 hover:-top-10 transition-all ease-in duration-500'>
                     <div className='relative z-40'>
                         <p className='dark:text-white'>ReactJs</p>
-                        <img className='brightness-200 bg-white' src={reactIcon} />
+                        <img alt='skills' className='brightness-200 bg-white' src={reactIcon} />
                     </div>
                     <div className='absolute group-hover:top-0 transition-all duration-100 top-80 h-full'>
                         <ParticlesBg type="tadpole" bg={{
@@ -60,7 +60,7 @@ export default function Skills() {
                 <div className='relative overflow-hidden group flex flex-col justify-center items-center  shadow-lg top-0 hover:-top-10 transition-all ease-in duration-500'>
                     <div className='relative z-40'>
                         <p className='dark:text-white'>NodeJs</p>
-                        <img className='brightness-200 bg-white' src={nodeIcon} />
+                        <img alt='skills' className='brightness-200 bg-white' src={nodeIcon} />
                     </div>
                     <div className='absolute group-hover:top-0 transition-all duration-100 top-80 h-full'>
                         <ParticlesBg type="tadpole" bg={{
@@ -73,7 +73,7 @@ export default function Skills() {
                 <div className='relative overflow-hidden group flex flex-col justify-center items-center  shadow-lg top-0 hover:-top-10 transition-all ease-in duration-500'>
                     <div className='relative z-40'>
                         <p className='dark:text-white'>ReactNative</p>
-                        <img className=' bg-white' src={reactNativeIcon} />
+                        <img alt='skills' className=' bg-white' src={reactNativeIcon} />
                     </div>
                     <div className='absolute group-hover:top-0 transition-all duration-100 top-80 h-full'>
                         <ParticlesBg type="tadpole" bg={{
@@ -87,7 +87,7 @@ export default function Skills() {
                 <div className='relative overflow-hidden group flex flex-col justify-center items-center  shadow-lg top-0 hover:-top-10 transition-all ease-in duration-500'>
                     <div className='relative z-40'>
                         <p className='dark:text-white'>MongoDB</p>
-                        <img className=' bg-white' src={mongoDBIcon} />
+                        <img alt='skills' className=' bg-white' src={mongoDBIcon} />
                     </div>
                     <div className='absolute group-hover:top-0 transition-all duration-100 top-80 h-full'>
                         <ParticlesBg type="tadpole" bg={{

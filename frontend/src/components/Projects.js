@@ -10,9 +10,9 @@ export default function Projects() {
                 {projects.map((pro, index) =>
                     <div  key={pro.id} className='w-full md:w-1/2 m-auto'>
                         <p className='dark:text-white py-3 text-2xl font-bold'>{pro.title}</p>
-                        <img className='border' src={pro.image} />
+                        <img className='border' alt='project' src={pro.image} />
                         <p className='py-3 '>
-                            {pro?.stacks.map(stack =>
+                            {pro?.stacks?.map(stack =>
                                 <span key={stack.toString()} className='dark:text-white dark:bg-black bg-gray-300 inline-block my-1 p-2 border mr-2 rounded-2xl'>{stack}</span>
                             )}
                         </p>

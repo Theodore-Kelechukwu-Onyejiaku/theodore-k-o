@@ -1,4 +1,4 @@
-import { useContext, useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Home from './components/Home';
 import Layout from './components/Layout/Layout';
 import MyAppContext from './utils/MyAppContext';
@@ -9,7 +9,6 @@ function App() {
 
 
   useEffect(() => {
-    console.log(theme)
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       setTheme("dark")
       document.documentElement.classList.add('dark')

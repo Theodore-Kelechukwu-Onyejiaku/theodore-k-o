@@ -37,7 +37,7 @@ export default function Home() {
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover
-                theme={`${theme == "dark" ? "dark": "light"}`}
+                theme={`${theme === "dark" ? "dark": "light"}`}
             />
             <Hero />
             <div className='dark:bg-black'>

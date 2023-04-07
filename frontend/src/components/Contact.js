@@ -30,7 +30,7 @@ export default function Contact() {
             hasError = true
         }
 
-        Object.keys(contactDetails).map(key => {
+        Object.keys(contactDetails).forEach(key => {
             if (contactDetails[key].trim() === "") {
                 setErrors(prev => [...prev, key.toLowerCase() + " is missing"])
                 hasError = true

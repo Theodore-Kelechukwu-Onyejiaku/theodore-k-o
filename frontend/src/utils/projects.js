@@ -9,6 +9,7 @@ import hackflashc from "../assets/images/hackflashc.png"
 import campusFoodie from "../assets/images/campus foodie.png"
 import twitchers from "../assets/images/twitchers.png"
 import project_mgt from "../assets/images/project-mgt.png"
+import strapiWebDev from "../assets/images/strapi-web-dev.png"
 
 const projects = [
     {
@@ -66,6 +67,12 @@ const projects = [
         id: 11, title: "Project Management App", "image": project_mgt, stacks: ['GraphQL', "ReactJs", "Tailwind CSS", "NodeJS", "MongoDB"],
         description: "Project Management app built using GraphQL, NodeJs, MongoDB and ReactJs",
         url: "https://project-mgt.onrender.com/"
+    },
+    {
+        id: 12, title: "Strapi Website Dev Competition",
+        image: strapiWebDev,
+        description: "I came 3rd position in the Strapi Org Web Dev compeition. I created this conceptual web page which helped me earn the spot.",
+        url: "https://strapi-community-website.netlify.app/"
     }
 ]
 

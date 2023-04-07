@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useContext } from "react"
-import { RiNotification3Fill, RiSunLine, RiMoonLine } from "react-icons/ri"
+import { RiSunLine, RiMoonLine } from "react-icons/ri"
 import MyAppContext from "../utils/MyAppContext"
 import { TypeAnimation } from 'react-type-animation';
 import scrollSmooth from "scroll-smooth"
@@ -10,7 +10,6 @@ export default function Header() {
 
     const closeButtonRef = useRef()
     const overlayRef = useRef()
-    const overlayThemeBtn = useRef()
 
     // fixed z-50 w-full
     const handleMenu = () => {
@@ -85,8 +84,8 @@ export default function Header() {
                             </div>
 
                             <div className='flex items-center justify-between md:justify-end md:basis-1/4'>
-                                {theme == "dark" ? <button className="text-white mr-5 relative z-40" ><RiSunLine onClick={() => { localStorage.theme = "light"; setTheme("light") }} fill={theme == "dark" ? "white" : "black"} className='w-4 h-auto' /></button> :
-                                    <button className="text-white mr-5 relative z-40" ><RiMoonLine onClick={() => { localStorage.theme = "dark"; setTheme("dark") }} fill={theme == "dark" ? "black" : "white"} className='w-4 h-auto' /></button>}
+                                {theme === "dark" ? <button className="text-white mr-5 relative z-40" ><RiSunLine onClick={() => { localStorage.theme = "light"; setTheme("light") }} fill={theme === "dark" ? "white" : "black"} className='w-4 h-auto' /></button> :
+                                    <button className="text-white mr-5 relative z-40" ><RiMoonLine onClick={() => { localStorage.theme = "dark"; setTheme("dark") }} fill={theme === "dark" ? "black" : "white"} className='w-4 h-auto' /></button>}
 
                                 <div onClick={() => { scrollTo("#about") }} className='mr-5 hidden md:block relative z-40 p-2
                                 '>
