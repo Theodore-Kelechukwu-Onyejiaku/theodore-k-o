@@ -5,7 +5,7 @@ import strapi from "../assets/images/strapi.png"
 import hashnode from "../assets/images/hashnode.png"
 import openreplay from "../assets/images/openreplay.svg"
 
-export default function About() {
+export default function Articles() {
     return (
         <div className='dark:bg-black dark:bg-opacity-100 px-5 py-10 md:p-10' data-aos="fade-up" data-aos-duration="1500" id='articles'>
             <div className=''>
@@ -67,10 +67,10 @@ export default function About() {
                             <span className="dark:text-white text-2xl font-bold">OpenReplay</span>
                         </div>
                         <p className="dark:text-white my-3">Start a blog for free instantly and share your ideas with people in tech, developers, and engineers. Hashnode is a free blogging platform.</p>
-                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="/">Coming Soon...</a>
+                        <a className="rounded  p-2 border text-white bg-[#ff2fff] dark:border-none font-bold shadow block w-44 text-center" href="https://blog.openreplay.com/authors/theodore-kelechukwu-onyejiaku/">View My Articles</a>
                     </div>
 
-                    
+
                 </div>
             </div>
         </div>

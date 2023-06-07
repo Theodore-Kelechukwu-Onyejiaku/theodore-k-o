@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.9e4f7e26.css",
-    "main.js": "/static/js/main.c3a5f575.js",
+    "main.js": "/static/js/main.19043f01.js",
     "static/js/27.046246d5.chunk.js": "/static/js/27.046246d5.chunk.js",
     "static/media/twitchers.png": "/static/media/twitchers.5b0fbc4f884d08ec7ea8.png",
     "static/media/kc.png": "/static/media/kc.b9220f10d4451a2a3088.png",
@@ -23,6 +23,6 @@
   },
   "entrypoints": [
     "static/css/main.9e4f7e26.css",
-    "static/js/main.c3a5f575.js"
+    "static/js/main.19043f01.js"
   ]
 }
